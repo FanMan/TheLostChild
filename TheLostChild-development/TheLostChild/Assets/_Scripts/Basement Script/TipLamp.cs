@@ -17,7 +17,7 @@ public class TipLamp : MonoBehaviour
 
     void OnTriggerExit(Collider C)
     {
-        if(C.CompareTag("Player"))
+        if(C.CompareTag("Ivanoffee"))
         {
             Lamp.gameObject.transform.Rotate(new Vector3(0, 0, 13));
             Object.GetComponent<AudioSource>().Play();
